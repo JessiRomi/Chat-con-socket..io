@@ -13,10 +13,6 @@ let messages = [
         { author: "Saul", text: "¡Genial!" }
 ];
 
-/*io.on('connection', function(socket) {
-    console.log('Un cliente se ha conectado');
-    socket.emit('messages', messages);
-    });*/
 io.on('connection', function(socket) {
     console.log('Un cliente se ha conectado');
     socket.emit('messages', messages);
